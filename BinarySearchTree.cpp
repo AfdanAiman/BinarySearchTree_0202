@@ -35,5 +35,7 @@ public:
 
         //Step 1: Allocate memory for a new node
         Node *newNode = new Node();
+        //Step 2: Assign the value to the data field of new node
+        newNode->info = x;
     }
 };
