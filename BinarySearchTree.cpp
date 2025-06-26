@@ -27,8 +27,4 @@ public:
          ROOT = nullptr; // Initialize ROOT to NULL
     }
 
-    void insert()
-    {
-        
-    }
 };
