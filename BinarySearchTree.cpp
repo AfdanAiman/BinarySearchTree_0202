@@ -27,4 +27,13 @@ public:
          ROOT = nullptr; // Initialize ROOT to NULL
     }
 
+    void insert()
+    {
+        int x;
+        cout << "Masukan Nilai:";
+        cin >> x;
+
+        //Step 1: Allocate memory for a new node
+        Node *newNode = new Node();
+    }
 };
