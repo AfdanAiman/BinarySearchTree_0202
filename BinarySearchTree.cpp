@@ -55,7 +55,7 @@ public:
             return;
         }
         //Step 6: if the value in the data field of than that of the parent 
-        if(x = parent->info)
+        if(x < parent->info)
         {
             //6a: Make the left child of parent point to the new node
             parent->leftchild = newNode;
@@ -95,7 +95,7 @@ public:
             cout << "Tree is empty." << endl;
             return;
         }
-        if (ptr != nullptr)
+        if (ptr == nullptr)
            return;
 
         inorder(ptr->leftchild); 
@@ -109,7 +109,7 @@ public:
             cout << "Tree is empty." << endl;
             return;
         }
-        if (ptr != nullptr)
+        if (ptr == nullptr)
            return;
         cout << ptr->info << " ";
         preorder(ptr->leftchild); 
@@ -122,7 +122,7 @@ public:
             cout << "Tree is empty." << endl;
             return;
         }
-        if (ptr != nullptr)
+        if (ptr == nullptr)
            return;
         
         postorder(ptr->leftchild); 
